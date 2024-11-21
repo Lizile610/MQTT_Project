@@ -28,25 +28,25 @@
 
      ![image-20241103010639213](./img/03_MQTT移植过程/image-20241103010639213.png)
 
-2. 在工程目录下新建一个 `MQTTClient` 目录，用来存放从开源代码  [mqttclient](assets/source/mqttclient) 中移植过来的文件：
+2. 在工程目录下新建一个 `MQTTClient` 目录，用来存放从开源代码 [mqttclient](assets/source/SampleCodes/mqttclient) 中移植过来的文件：
 
    ![image-20241110155005499](./img/03_MQTT移植过程/image-20241110155005499.png)
 
-3. 在 [mqttclient](assets/source/mqttclient) 的  [test.c](assets/source/mqttclient/test/emqx/test.c) 中，`main` 函数用到了以下两个函数：
+3. 在 [mqttclient](assets/source/SampleCodes/mqttclient) 的  [test.c](assets/source/SampleCodes/mqttclient/test/emqx/test.c) 中，`main` 函数用到了以下两个函数：
 
    ![image-20241028232412289](./img/03_移植过程/image-20241028232412289.png)
 
    跳转到它们被定义的文件：
 
-   `mqtt_log_init` 函数在  [common](assets/source/mqttclient/common) 目录中的  [mqtt_log.h](assets/source/mqttclient/common/mqtt_log.h) 中被定义
+   `mqtt_log_init` 函数在  [common](assets/source/SampleCodes/mqttclient/common) 目录中的  [mqtt_log.h](assets/source/SampleCodes/mqttclient/common/mqtt_log.h) 中被定义
 
    ![image-20241028232509700](./img/03_移植过程/image-20241028232509700.png)
 
-   `mqtt_lease` 函数在 [mqttclient](assets/source/mqttclient/mqttclient) 目录中的  [mqttclient.c](assets/source/mqttclient/mqttclient/mqttclient.c) 中被定义
+   `mqtt_lease` 函数在 [mqttclient](assets/source/SampleCodes/mqttclient) 目录中的  [mqttclient.c](assets/source/SampleCodes/mqttclient/mqttclient.c) 中被定义
 
    ![image-20241028232552047](./img/03_移植过程/image-20241028232552047.png)
 
-   因此直接将这两个目录 [common](assets/source/mqttclient/common) 和 [mqttclient](assets/source/mqttclient/mqttclient) 拷贝到 FreeRTOS 工程目录下的  [MQTTClient](assets/source/01_FreeRTOS_Template/MQTTClient)  目录：
+   因此直接将这两个目录 [common](assets/source/SampleCodes/mqttclient/common) 和 [mqttclient](assets/source/SampleCodes/mqttclient) 拷贝到 FreeRTOS 工程目录下的  MQTTClient 目录：
 
    ![image-20241110155045948](./img/03_MQTT移植过程/image-20241110155045948.png)
 
@@ -72,7 +72,7 @@
        	MQTTSerialize_subscribe(...)  // "assets\source\mqttclient\mqtt\MQTTSubscribeClient.c"     
    ```
 
-   在开源代码 [mqttclient](assets/source/mqttclient) 的目录中，需要拷贝到 FreeRTOS 工程目录下 [MQTTClient](assets/source/01_FreeRTOS_Template/MQTTClient) 目录的所有目录汇总：
+   在开源代码 [mqttclient](assets/source/SampleCodes/mqttclient) 的目录中，需要拷贝到 FreeRTOS 工程目录下 MQTTClient 目录的所有目录汇总：
 
    ```
    "assets\source\mqttclient\common"      // 各类通用的头文件
@@ -84,7 +84,7 @@
 
    ![image-20241110155118340](./img/03_MQTT移植过程/image-20241110155118340.png)
 
-   拷贝完成后，FreeRTOS 工程目录中， [MQTTClient](assets/ource/01_FreeRTOS_Template/MQTTClient) 中包含如下子目录：
+   拷贝完成后，FreeRTOS 工程目录中， MQTTClient 中包含如下子目录：
 
    ![image-20241110155741295](./img/03_MQTT移植过程/image-20241110155741295.png)
 
