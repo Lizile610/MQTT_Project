@@ -42,11 +42,11 @@
 
    ![image-20241028232509700](./img/03_移植过程/image-20241028232509700.png)
 
-   `mqtt_lease` 函数在 [mqttclient](assets/source/SampleCodes/mqttclient) 目录中的  [mqttclient.c](assets/source/SampleCodes/mqttclient/mqttclient.c) 中被定义
+   `mqtt_lease` 函数在 [mqttclient](assets/source/SampleCodes/mqttclient/mqttclient) 目录中的 [mqttclient.c](assets/source/SampleCodes/mqttclient/mqttclient/mqttclient.c) 中被定义
 
    ![image-20241028232552047](./img/03_移植过程/image-20241028232552047.png)
 
-   因此直接将这两个目录 [common](assets/source/SampleCodes/mqttclient/common) 和 [mqttclient](assets/source/SampleCodes/mqttclient) 拷贝到 FreeRTOS 工程目录下的  MQTTClient 目录：
+   因此直接将这两个目录 [common](assets/source/SampleCodes/mqttclient/common) 和 [mqttclient](assets/source/SampleCodes/mqttclient/mqttclient) 拷贝到 FreeRTOS 工程目录下的  MQTTClient 目录：
 
    ![image-20241110155045948](./img/03_MQTT移植过程/image-20241110155045948.png)
 

@@ -390,7 +390,7 @@ UART_Rx_ISR(...) {
   void USART2_Write(char *buf, int len);  /* 使用死等（查询）方式，通过 USART2 将 buf 中长度为 len 的数据发送出去 */
   ```
 
-编译通过，将==当前的工程进度备份到 [01_UART_Driver_Compiled_Successfully](assets\source\01_UART_Driver_Compiled_Successfully) 目录下。==
+编译通过，将==当前的工程进度备份到 [01_UART_Driver_Compiled_Successfully](assets/source/01_UART_Driver_Compiled_Successfully) 目录下。==
 
 ## 2.5 测试 UART 硬件驱动程序
 
