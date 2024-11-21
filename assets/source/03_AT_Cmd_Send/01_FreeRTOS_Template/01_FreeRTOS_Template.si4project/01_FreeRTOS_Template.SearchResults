@@ -1,0 +1,162 @@
+---- USART2_IRQHandler Matches (163 in 51 files) ----
+01_FreeRTOS_Template.build_log.htm (MDK-ARM\01_FreeRTOS_Template) line 31 : 01_FreeRTOS_Template\01_FreeRTOS_Template.axf: Error: L6200E: Symbol USART2_IRQHandler multiply defined (by stm32f1xx_it.o and main.o).
+01_FreeRTOS_Template.htm (MDK-ARM\01_FreeRTOS_Template) line 83 :  <LI><a href="#[39]">USART2_IRQHandler</a> from main.o(i.USART2_IRQHandler) referenced from startup_stm32f103xb.o(RESET)
+01_FreeRTOS_Template.htm (MDK-ARM\01_FreeRTOS_Template) line 831 : <P><STRONG><a name="[39]"></a>USART2_IRQHandler</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, main.o(i.USART2_IRQHandler))
+01_FreeRTOS_Template.htm (MDK-ARM\01_FreeRTOS_Template) line 915 : <BR><BR>[Called By]<UL><LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART2_IRQHandler
+main(3221).c (01_FreeRTOS_Template.si4project\Backup) line 57 : void USART2_IRQHandler(void);
+main(3221).c (01_FreeRTOS_Template.si4project\Backup) line 167 : /* 函数名  ： USART2_IRQHandler
+main(3221).c (01_FreeRTOS_Template.si4project\Backup) line 174 : void USART2_IRQHandler(void)
+main(5251).c (01_FreeRTOS_Template.si4project\Backup) line 57 : void USART2_IRQHandler(void);
+main(5251).c (01_FreeRTOS_Template.si4project\Backup) line 167 : /* 函数名  ： USART2_IRQHandler
+main(5251).c (01_FreeRTOS_Template.si4project\Backup) line 174 : void USART2_IRQHandler(void)
+main(5831).c (01_FreeRTOS_Template.si4project\Backup) line 57 : void USART2_IRQHandler(void);
+main(5831).c (01_FreeRTOS_Template.si4project\Backup) line 167 : /* 函数名  ： USART2_IRQHandler
+main(5831).c (01_FreeRTOS_Template.si4project\Backup) line 174 : void USART2_IRQHandler(void)
+main.c (Core\Src) line 57 : void USART2_IRQHandler(void);
+main.c (Core\Src) line 167 : /* 函数�?  �? USART2_IRQHandler
+main.c (Core\Src) line 174 : void USART2_IRQHandler(void)
+startup_stm32f100xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 116 :                 DCD     USART2_IRQHandler               ; USART2
+startup_stm32f100xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 231 :                 EXPORT  USART2_IRQHandler                [WEAK]
+startup_stm32f100xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 273 : USART2_IRQHandler
+startup_stm32f100xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 184 :   .word USART2_IRQHandler
+startup_stm32f100xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 386 :   .weak  USART2_IRQHandler
+startup_stm32f100xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 387 :   .thumb_set USART2_IRQHandler,Default_Handler
+startup_stm32f100xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 110 :         DCD     USART2_IRQHandler             ; USART2
+startup_stm32f100xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 358 :         PUBWEAK USART2_IRQHandler
+startup_stm32f100xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 360 : USART2_IRQHandler
+startup_stm32f100xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 361 :         B USART2_IRQHandler
+startup_stm32f100xe.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 118 :                 DCD     USART2_IRQHandler               ; USART2
+startup_stm32f100xe.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 238 :                 EXPORT  USART2_IRQHandler                [WEAK]
+startup_stm32f100xe.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 292 : USART2_IRQHandler
+startup_stm32f100xe.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 185 :   .word USART2_IRQHandler
+startup_stm32f100xe.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 392 :   .weak  USART2_IRQHandler
+startup_stm32f100xe.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 393 :   .thumb_set USART2_IRQHandler,Default_Handler
+startup_stm32f100xe.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 109 :         DCD     USART2_IRQHandler             ; USART2
+startup_stm32f100xe.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 363 :         PUBWEAK USART2_IRQHandler
+startup_stm32f100xe.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 365 : USART2_IRQHandler
+startup_stm32f100xe.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 366 :         B USART2_IRQHandler
+startup_stm32f101x6.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 116 :                 DCD     USART2_IRQHandler          ; USART2
+startup_stm32f101x6.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 209 :                 EXPORT  USART2_IRQHandler          [WEAK]
+startup_stm32f101x6.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 239 : USART2_IRQHandler
+startup_stm32f101x6.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 186 :   .word USART2_IRQHandler
+startup_stm32f101x6.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 314 :   .weak  USART2_IRQHandler
+startup_stm32f101x6.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 315 :   .thumb_set USART2_IRQHandler,Default_Handler
+startup_stm32f101x6.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 110 :         DCD     USART2_IRQHandler         ; USART2
+startup_stm32f101x6.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 305 :         PUBWEAK USART2_IRQHandler
+startup_stm32f101x6.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 307 : USART2_IRQHandler
+startup_stm32f101x6.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 308 :         B USART2_IRQHandler
+startup_stm32f101xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 116 :                 DCD     USART2_IRQHandler          ; USART2
+startup_stm32f101xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 213 :                 EXPORT  USART2_IRQHandler          [WEAK]
+startup_stm32f101xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 248 : USART2_IRQHandler
+startup_stm32f101xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 185 :   .word USART2_IRQHandler
+startup_stm32f101xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 325 :   .weak USART2_IRQHandler
+startup_stm32f101xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 326 :   .thumb_set USART2_IRQHandler,Default_Handler
+startup_stm32f101xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 110 :         DCD     USART2_IRQHandler         ; USART2
+startup_stm32f101xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 325 :         PUBWEAK USART2_IRQHandler
+startup_stm32f101xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 327 : USART2_IRQHandler
+startup_stm32f101xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 328 :         B USART2_IRQHandler
+startup_stm32f101xe.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 115 :                 DCD     USART2_IRQHandler          ; USART2
+startup_stm32f101xe.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 230 :                 EXPORT  USART2_IRQHandler          [WEAK]
+startup_stm32f101xe.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 276 : USART2_IRQHandler
+startup_stm32f101xe.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 185 :   .word USART2_IRQHandler
+startup_stm32f101xe.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 379 :   .weak USART2_IRQHandler
+startup_stm32f101xe.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 380 :   .thumb_set USART2_IRQHandler,Default_Handler
+startup_stm32f101xe.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 112 :         DCD     USART2_IRQHandler         ; USART2
+startup_stm32f101xe.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 343 :         PUBWEAK USART2_IRQHandler
+startup_stm32f101xe.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 345 : USART2_IRQHandler
+startup_stm32f101xe.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 346 :         B USART2_IRQHandler
+startup_stm32f101xg.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 115 :                 DCD     USART2_IRQHandler             ; USART2
+startup_stm32f101xg.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 233 :                 EXPORT  USART2_IRQHandler             [WEAK]
+startup_stm32f101xg.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 285 : USART2_IRQHandler
+startup_stm32f101xg.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 184 :   .word  USART2_IRQHandler
+startup_stm32f101xg.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 386 :   .weak  USART2_IRQHandler
+startup_stm32f101xg.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 387 :   .thumb_set USART2_IRQHandler,Default_Handler
+startup_stm32f101xg.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 113 :         DCD     USART2_IRQHandler             ; USART2
+startup_stm32f101xg.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 364 :         PUBWEAK USART2_IRQHandler
+startup_stm32f101xg.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 366 : USART2_IRQHandler
+startup_stm32f101xg.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 367 :         B USART2_IRQHandler
+startup_stm32f102x6.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 116 :                 DCD     USART2_IRQHandler          ; USART2
+startup_stm32f102x6.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 212 :                 EXPORT  USART2_IRQHandler          [WEAK]
+startup_stm32f102x6.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 245 : USART2_IRQHandler
+startup_stm32f102x6.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 185 :   .word USART2_IRQHandler
+startup_stm32f102x6.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 319 :   .weak USART2_IRQHandler
+startup_stm32f102x6.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 320 :   .thumb_set USART2_IRQHandler,Default_Handler
+startup_stm32f102x6.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 110 :         DCD     USART2_IRQHandler         ; USART2
+startup_stm32f102x6.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 315 :         PUBWEAK USART2_IRQHandler
+startup_stm32f102x6.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 317 : USART2_IRQHandler
+startup_stm32f102x6.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 318 :         B USART2_IRQHandler
+startup_stm32f102xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 116 :                 DCD     USART2_IRQHandler          ; USART2
+startup_stm32f102xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 216 :                 EXPORT  USART2_IRQHandler          [WEAK]
+startup_stm32f102xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 254 : USART2_IRQHandler
+startup_stm32f102xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 185 :   .word USART2_IRQHandler
+startup_stm32f102xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 331 :   .weak USART2_IRQHandler
+startup_stm32f102xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 332 :   .thumb_set USART2_IRQHandler,Default_Handler
+startup_stm32f102xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 110 :         DCD     USART2_IRQHandler         ; USART2
+startup_stm32f102xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 335 :         PUBWEAK USART2_IRQHandler
+startup_stm32f102xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 337 : USART2_IRQHandler
+startup_stm32f102xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 338 :         B USART2_IRQHandler
+startup_stm32f103x6.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 116 :                 DCD     USART2_IRQHandler          ; USART2
+startup_stm32f103x6.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 218 :                 EXPORT  USART2_IRQHandler          [WEAK]
+startup_stm32f103x6.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 257 : USART2_IRQHandler
+startup_stm32f103x6.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 185 :   .word USART2_IRQHandler
+startup_stm32f103x6.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 337 :   .weak USART2_IRQHandler
+startup_stm32f103x6.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 338 :   .thumb_set USART2_IRQHandler,Default_Handler
+startup_stm32f103x6.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 110 :         DCD     USART2_IRQHandler         ; USART2
+startup_stm32f103x6.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 345 :         PUBWEAK USART2_IRQHandler
+startup_stm32f103x6.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 347 : USART2_IRQHandler
+startup_stm32f103x6.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 348 :         B USART2_IRQHandler
+startup_stm32f103xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 116 :                 DCD     USART2_IRQHandler          ; USART2
+startup_stm32f103xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 222 :                 EXPORT  USART2_IRQHandler          [WEAK]
+startup_stm32f103xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 266 : USART2_IRQHandler
+startup_stm32f103xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 185 :   .word USART2_IRQHandler
+startup_stm32f103xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 349 :   .weak USART2_IRQHandler
+startup_stm32f103xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 350 :   .thumb_set USART2_IRQHandler,Default_Handler
+startup_stm32f103xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 110 :         DCD     USART2_IRQHandler         ; USART2
+startup_stm32f103xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 365 :         PUBWEAK USART2_IRQHandler
+startup_stm32f103xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 367 : USART2_IRQHandler
+startup_stm32f103xb.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 368 :         B USART2_IRQHandler
+startup_stm32f103xb.s (MDK-ARM) line 116 :                 DCD     USART2_IRQHandler          ; USART2
+startup_stm32f103xb.s (MDK-ARM) line 222 :                 EXPORT  USART2_IRQHandler          [WEAK]
+startup_stm32f103xb.s (MDK-ARM) line 266 : USART2_IRQHandler
+startup_stm32f103xe.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 115 :                 DCD     USART2_IRQHandler          ; USART2
+startup_stm32f103xe.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 238 :                 EXPORT  USART2_IRQHandler          [WEAK]
+startup_stm32f103xe.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 299 : USART2_IRQHandler
+startup_stm32f103xe.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 187 :   .word USART2_IRQHandler
+startup_stm32f103xe.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 405 :   .weak USART2_IRQHandler
+startup_stm32f103xe.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 406 :   .thumb_set USART2_IRQHandler,Default_Handler
+startup_stm32f103xe.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 112 :         DCD     USART2_IRQHandler         ; USART2
+startup_stm32f103xe.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 383 :         PUBWEAK USART2_IRQHandler
+startup_stm32f103xe.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 385 : USART2_IRQHandler
+startup_stm32f103xe.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 386 :         B USART2_IRQHandler
+startup_stm32f103xg.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 115 :                 DCD     USART2_IRQHandler             ; USART2
+startup_stm32f103xg.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 238 :                 EXPORT  USART2_IRQHandler             [WEAK]
+startup_stm32f103xg.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 299 : USART2_IRQHandler
+startup_stm32f103xg.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 184 :   .word  USART2_IRQHandler
+startup_stm32f103xg.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 401 :   .weak  USART2_IRQHandler
+startup_stm32f103xg.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 402 :   .thumb_set USART2_IRQHandler,Default_Handler
+startup_stm32f103xg.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 109 :         DCD     USART2_IRQHandler             ; USART2
+startup_stm32f103xg.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 380 :         PUBWEAK USART2_IRQHandler
+startup_stm32f103xg.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 382 : USART2_IRQHandler
+startup_stm32f103xg.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 383 :         B USART2_IRQHandler
+startup_stm32f105xc.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 116 :                 DCD     USART2_IRQHandler          ; USART2
+startup_stm32f105xc.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 247 :                 EXPORT  USART2_IRQHandler          [WEAK]
+startup_stm32f105xc.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 307 : USART2_IRQHandler
+startup_stm32f105xc.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 184 :   .word USART2_IRQHandler
+startup_stm32f105xc.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 401 :   .weak USART2_IRQHandler
+startup_stm32f105xc.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 402 :   .thumb_set USART2_IRQHandler,Default_Handler
+startup_stm32f105xc.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 110 :         DCD     USART2_IRQHandler          ; USART2
+startup_stm32f105xc.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 391 :         PUBWEAK USART2_IRQHandler
+startup_stm32f105xc.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 393 : USART2_IRQHandler
+startup_stm32f105xc.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 394 :         B USART2_IRQHandler
+startup_stm32f107xc.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 116 :                 DCD     USART2_IRQHandler          ; USART2
+startup_stm32f107xc.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 247 :                 EXPORT  USART2_IRQHandler          [WEAK]
+startup_stm32f107xc.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm) line 309 : USART2_IRQHandler
+startup_stm32f107xc.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 187 :   .word USART2_IRQHandler
+startup_stm32f107xc.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 404 :   .weak  USART2_IRQHandler
+startup_stm32f107xc.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\gcc) line 405 :   .thumb_set USART2_IRQHandler,Default_Handler
+startup_stm32f107xc.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 110 :         DCD     USART2_IRQHandler          ; USART2
+startup_stm32f107xc.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 391 :         PUBWEAK USART2_IRQHandler
+startup_stm32f107xc.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 393 : USART2_IRQHandler
+startup_stm32f107xc.s (Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\iar) line 394 :         B USART2_IRQHandler
+stm32f1xx_it.c (Core\Src) line 195 : void USART2_IRQHandler(void)
+stm32f1xx_it.h (Core\Inc) line 57 : void USART2_IRQHandler(void);

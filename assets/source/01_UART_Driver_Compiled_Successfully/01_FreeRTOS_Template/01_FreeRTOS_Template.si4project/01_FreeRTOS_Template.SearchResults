@@ -1,0 +1,2 @@
+---- USART_ITConfig Matches (1 in 1 files) ----
+main in main.c (Core\Src) :   USART_ITConfig(USART2, USART_IT_RXNE, ENABLE);  // 使能 USART2 的 RXNE 中断

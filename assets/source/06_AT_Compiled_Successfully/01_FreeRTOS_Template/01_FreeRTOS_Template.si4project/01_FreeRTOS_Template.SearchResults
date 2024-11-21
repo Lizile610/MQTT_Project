@@ -1,0 +1,6 @@
+---- uart2_recv_mutex Matches (5 in 0 files) ----
+main.c (Core\Src) line 53 : static platform_mutex_t uart2_recv_mutex;  // 通知某些任务“USART2 接收到数据”的互斥量
+USART2_Lock_Init in main.c (Core\Src) : 	platform_mutex_init(&uart2_recv_mutex);  // 创建 UART2 的互斥锁，通知某些线程 UART2 接收到了数据（有数据可读）
+USART2_Lock_Init in main.c (Core\Src) : 	platform_mutex_lock(&uart2_recv_mutex);  // 先上锁，只有当 USART2 触发了接收中断才释放互斥锁
+USART2_IRQHandler in main.c (Core\Src) : 		platform_mutex_unlock(&uart2_recv_mutex);  // 释放互斥量，通知某些任务 USART2 接收到了数据，环形缓冲区有数据可读
+USART2_Read in main.c (Core\Src) : 			 platform_mutex_lock_timeout(&uart2_recv_mutex, timeout);

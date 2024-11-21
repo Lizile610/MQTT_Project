@@ -1,0 +1,16 @@
+---- client->urc_table Matches (16 in 2 files) ----
+at_client in at.h (rt-thread\components\net\at\include) :     struct at_urc_table *urc_table;
+at_obj_set_urc_table in at_client.c (rt-thread\components\net\at\src) :         client->urc_table = (struct at_urc_table *) rt_calloc(1, sizeof(struct at_urc_table));
+at_obj_set_urc_table in at_client.c (rt-thread\components\net\at\src) :         if (client->urc_table == RT_NULL)
+at_obj_set_urc_table in at_client.c (rt-thread\components\net\at\src) :         client->urc_table[0].urc = urc_table;
+at_obj_set_urc_table in at_client.c (rt-thread\components\net\at\src) :         client->urc_table[0].urc_size = table_sz;
+at_obj_set_urc_table in at_client.c (rt-thread\components\net\at\src) :         rt_memcpy(old_urc_table, client->urc_table, old_table_size);
+at_obj_set_urc_table in at_client.c (rt-thread\components\net\at\src) :         client->urc_table = (struct at_urc_table *) rt_realloc(client->urc_table,
+at_obj_set_urc_table in at_client.c (rt-thread\components\net\at\src) :         if (client->urc_table == RT_NULL)
+at_obj_set_urc_table in at_client.c (rt-thread\components\net\at\src) :         rt_memcpy(client->urc_table, old_urc_table, old_table_size);
+at_obj_set_urc_table in at_client.c (rt-thread\components\net\at\src) :         client->urc_table[client->urc_table_size].urc = urc_table;
+at_obj_set_urc_table in at_client.c (rt-thread\components\net\at\src) :         client->urc_table[client->urc_table_size].urc_size = table_sz;
+get_urc_obj in at_client.c (rt-thread\components\net\at\src) :     if (client->urc_table == RT_NULL)
+get_urc_obj in at_client.c (rt-thread\components\net\at\src) :         for (j = 0; j < client->urc_table[i].urc_size; j++)
+get_urc_obj in at_client.c (rt-thread\components\net\at\src) :             urc_table = client->urc_table + i;
+at_client_para_init in at_client.c (rt-thread\components\net\at\src) :     client->urc_table = RT_NULL;

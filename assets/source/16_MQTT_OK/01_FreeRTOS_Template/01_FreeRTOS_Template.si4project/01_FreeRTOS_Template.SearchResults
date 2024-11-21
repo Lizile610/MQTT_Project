@@ -1,0 +1,5 @@
+---- mqtt_yield_thread Matches (6 in 2 files) ----
+mqttclient(3637).c (01_FreeRTOS_Template.si4project\Backup) line 926 : static void mqtt_yield_thread(void *arg)
+mqtt_connect_with_results in mqttclient(3637).c (01_FreeRTOS_Template.si4project\Backup) :             c->mqtt_thread= platform_thread_init("mqtt_yield_thread", mqtt_yield_thread, c, MQTT_THREAD_STACK_SIZE, MQTT_THREAD_PRIO, MQTT_THREAD_TICK);
+mqttclient.c (MQTTClient\mqttclient) line 926 : static void mqtt_yield_thread(void *arg)
+mqtt_connect_with_results in mqttclient.c (MQTTClient\mqttclient) :             c->mqtt_thread= platform_thread_init("mqtt_yield_thread", mqtt_yield_thread, c, MQTT_THREAD_STACK_SIZE, MQTT_THREAD_PRIO, MQTT_THREAD_TICK);

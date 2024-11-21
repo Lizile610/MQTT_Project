@@ -1,0 +1,8 @@
+现成的：
+	platform_timer.c		| 	定时器
+	platform_thread.c		| 	线程
+	platform_mutex.c		| 	互斥量
+	platform_memory.c		|  	分配内存、释放内存
+	
+对于FreeRTOS，需要移植并自己实现的：
+	platform_net_socket.c	|	3 个函数：网络连接、收、发

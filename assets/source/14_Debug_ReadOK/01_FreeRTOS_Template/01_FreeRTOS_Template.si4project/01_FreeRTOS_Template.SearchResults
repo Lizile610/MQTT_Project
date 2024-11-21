@@ -1,0 +1,6 @@
+---- MQTT_DEFAULT_CMD_TIMEOUT Matches (5 in 3 files) ----
+mqtt_init in mqttclient(3637).c (01_FreeRTOS_Template.si4project\Backup) :     c->mqtt_cmd_timeout = MQTT_DEFAULT_CMD_TIMEOUT;
+mqtt_init in mqttclient.c (MQTTClient\mqttclient) :     c->mqtt_cmd_timeout = MQTT_DEFAULT_CMD_TIMEOUT;
+mqtt_defconfig.h (MQTTClient\mqttclient) line 34 : #ifndef MQTT_DEFAULT_CMD_TIMEOUT
+mqtt_defconfig.h (MQTTClient\mqttclient) line 35 :     #define     MQTT_DEFAULT_CMD_TIMEOUT            4000
+mqtt_defconfig.h (MQTTClient\mqttclient) line 36 : #endif // !MQTT_DEFAULT_CMD_TIMEOUT

@@ -1,0 +1,5 @@
+---- platform_net_socket_close Matches (4 in 4 files) ----
+nettype_tcp_disconnect in nettype_tcp.c (MQTTClient\network) :         platform_net_socket_close(n->socket);
+mbedtls_net_free in net_sockets_alt.c (MQTTClient\network\mbedtls\wrapper) :     platform_net_socket_close(ctx->fd);
+platform_net_socket.c (MQTTClient\platform\FreeRTOS) line 90 : int platform_net_socket_close(int fd)
+platform_net_socket.h (MQTTClient\platform\FreeRTOS) line 32 : int platform_net_socket_close(int fd);

@@ -1,0 +1,6 @@
+---- MQTT_THREAD_STACK_SIZE Matches (5 in 3 files) ----
+mqtt_connect_with_results in mqttclient(3637).c (01_FreeRTOS_Template.si4project\Backup) :             c->mqtt_thread= platform_thread_init("mqtt_yield_thread", mqtt_yield_thread, c, MQTT_THREAD_STACK_SIZE, MQTT_THREAD_PRIO, MQTT_THREAD_TICK);
+mqtt_connect_with_results in mqttclient.c (MQTTClient\mqttclient) :             c->mqtt_thread= platform_thread_init("mqtt_yield_thread", mqtt_yield_thread, c, MQTT_THREAD_STACK_SIZE, MQTT_THREAD_PRIO, MQTT_THREAD_TICK);
+mqtt_defconfig.h (MQTTClient\mqttclient) line 58 : #ifndef MQTT_THREAD_STACK_SIZE
+mqtt_defconfig.h (MQTTClient\mqttclient) line 59 :     #define     MQTT_THREAD_STACK_SIZE              4096
+mqtt_defconfig.h (MQTTClient\mqttclient) line 60 : #endif // !MQTT_THREAD_STACK_SIZE
