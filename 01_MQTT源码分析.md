@@ -1,6 +1,6 @@
 # 源码目录
 
- [mqttclient](assets\source\SampleCodes\mqttclient) 
+ [mqttclient](assets/source/SampleCodes/mqttclient) 
 
 ![image-20241110163107074](./img/01_MQTT源码分析/image-20241110163107074.png)
 
@@ -10,7 +10,7 @@ mqtt 作者提供了对接不同服务器的客户端测试源码：
 
 ![image-20241110163218123](./img/01_MQTT源码分析/image-20241110163218123.png)
 
-本次实验我们使用 emqx 服务器，以下是从 [test.c](assets\source\SampleCodes\mqttclient\test\emqx\test.c) 中的 `main` 函数作为入口对 mqtt 源码进行分析。
+本次实验我们使用 emqx 服务器，以下是从 [test.c](assets/source/SampleCodes/mqttclient/test/emqx/test.c) 中的 `main` 函数作为入口对 mqtt 源码进行分析。
 
 
 
